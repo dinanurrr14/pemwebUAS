@@ -1,0 +1,67 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* Tambahkan margin bawah untuk memberi jarak antara input dan daftar berita */
+}
+
+.search-input {
+  flex-grow: 1; /* Memperluas input pencarian untuk mengambil sisa ruang */
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  width: 100%; /* Menggunakan lebar otomatis untuk tombol */
+}
+
+.news-list {
+  display: grid; /* Menggunakan CSS Grid */
+  grid-template-columns: repeat(2, 1fr); /* Dua kolom dengan lebar yang sama */
+  gap: 20px; /* Jarak antar item */
+  margin-top: 1rem; /* Tambahkan margin atas untuk memberi jarak antara input dan daftar berita */
+}
+
+.news-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #f9f9f9; /* Warna latar belakang untuk setiap berita */
+  margin-bottom: 10px; /* Jarak antara setiap berita */
+}
+
+.news-title {
+  color: rgb(9, 187, 101); /* Warna judul berita */
+  margin-bottom: 5px; /* Jarak antara judul dan detail berita */
+  text-align: center;
+}
+
+.news-item p {
+  margin-bottom: 8px; /* Jarak antara paragraf dalam setiap berita */
+  text-align: justify;
+}
